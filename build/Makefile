@@ -176,6 +176,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RTWeekend.dir\build.make CMakeFiles/RTWeekend.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+sphere.obj: sphere.cpp.obj
+.PHONY : sphere.obj
+
+# target to build an object file
+sphere.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RTWeekend.dir\build.make CMakeFiles/RTWeekend.dir/sphere.cpp.obj
+.PHONY : sphere.cpp.obj
+
+sphere.i: sphere.cpp.i
+.PHONY : sphere.i
+
+# target to preprocess a source file
+sphere.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RTWeekend.dir\build.make CMakeFiles/RTWeekend.dir/sphere.cpp.i
+.PHONY : sphere.cpp.i
+
+sphere.s: sphere.cpp.s
+.PHONY : sphere.s
+
+# target to generate assembly for a file
+sphere.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RTWeekend.dir\build.make CMakeFiles/RTWeekend.dir/sphere.cpp.s
+.PHONY : sphere.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -191,6 +215,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... sphere.obj
+	@echo ... sphere.i
+	@echo ... sphere.s
 .PHONY : help
 
 

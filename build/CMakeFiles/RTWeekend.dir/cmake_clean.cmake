@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/RTWeekend.dir/camera.cpp.obj.d"
   "CMakeFiles/RTWeekend.dir/main.cpp.obj"
   "CMakeFiles/RTWeekend.dir/main.cpp.obj.d"
+  "CMakeFiles/RTWeekend.dir/sphere.cpp.obj"
+  "CMakeFiles/RTWeekend.dir/sphere.cpp.obj.d"
   "libz-result.dll.a"
 )
 

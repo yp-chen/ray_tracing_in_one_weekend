@@ -363,4 +363,6 @@ CMakeFiles/RTWeekend.dir/camera.cpp.obj: \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/x86_64-w64-mingw32/include/sec_api/tchar_s.h \
  C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\ray.h \
  C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\device.h \
+ C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\sphere.h \
+ C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\object.h \
  C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\global.h

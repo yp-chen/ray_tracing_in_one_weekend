@@ -15,7 +15,10 @@ add_executable(RTWeekend
         ray.h
         camera.h
         camera.cpp
-        global.h)
+        global.h
+        object.h
+        sphere.h
+        sphere.cpp)
 
 target_link_libraries(RTWeekend easyx)
 

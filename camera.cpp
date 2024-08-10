@@ -31,15 +31,19 @@ Ray Camera::get_ray(double u, double v) const {
     return Ray(origin, direction);
 }
 
-Color Camera::ray_color(const Ray& r) const {
+Color Camera::ray_color(const Ray& r, Sphere world) const {
     Vec3 Direction = r.direction().normalize();
     const auto a = 0.5 * (Direction[1] + 1.0);
     auto Result = (1.0 - a) * Color(1.0, 1.0, 1.0) + a * Color (0.5, 0.7, 1.0);
     Result = Result * 255.0;
+    hit_record rec;
+    if (world.hit(r, rec)) {
+        return Color(255, 0, 0);
+    }
     return Result;
 }
 
-void Camera::rander() {
+void Camera::rander(Sphere world) {
     Point3 left_top = center_point_ - Vec3(half_near_width_, -half_near_height_, 0) - Vec3(0, 0, near_);
     //横纵单位步长
     double horizontal_step = near_width_ / viewport_width_;
@@ -52,7 +56,7 @@ void Camera::rander() {
             //当前中心点坐标
             Point3 center = left_top_center + Vec3(j * horizontal_step, -i * vertical_step, 0);
             Ray r(center_point_, center - center_point_);
-            Color writecolor = ray_color(r);
+            Color writecolor = ray_color(r, world);
             Graphics.At(j, i) = colorToDWORD(writecolor);
         }
     }

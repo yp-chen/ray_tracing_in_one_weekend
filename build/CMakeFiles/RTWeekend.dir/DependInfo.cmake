@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/yongpeng.chen/Desktop/ray_tracing_in_one_weekend/ray_tracing_in_one_weekend/camera.cpp" "CMakeFiles/RTWeekend.dir/camera.cpp.obj" "gcc" "CMakeFiles/RTWeekend.dir/camera.cpp.obj.d"
   "C:/Users/yongpeng.chen/Desktop/ray_tracing_in_one_weekend/ray_tracing_in_one_weekend/main.cpp" "CMakeFiles/RTWeekend.dir/main.cpp.obj" "gcc" "CMakeFiles/RTWeekend.dir/main.cpp.obj.d"
+  "C:/Users/yongpeng.chen/Desktop/ray_tracing_in_one_weekend/ray_tracing_in_one_weekend/sphere.cpp" "CMakeFiles/RTWeekend.dir/sphere.cpp.obj" "gcc" "CMakeFiles/RTWeekend.dir/sphere.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
