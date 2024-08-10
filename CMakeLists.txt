@@ -12,7 +12,10 @@ add_executable(RTWeekend
         main.cpp 
         device.h
         vec3.h
-        ray.h)
+        ray.h
+        camera.h
+        camera.cpp
+        global.h)
 
 target_link_libraries(RTWeekend easyx)
 

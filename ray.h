@@ -1,3 +1,5 @@
+#ifndef RAY_H
+#define RAY_H
 #include "vec3.h"
 class Ray {
   public:
@@ -10,3 +12,4 @@ class Ray {
     Point3 orig_;
     Vec3 dir_;  
 };
+#endif // RAY_H

@@ -1,3 +1,5 @@
+#ifndef VEC3_H
+#define VEC3_H
 #include <cmath>
 #include <iostream>
 #include <graphics.h>
@@ -38,6 +40,7 @@ class Vec3 {
             z_ -= v.z_;
             return *this;
         }
+
         float operator[](int i) const {
             if (i == 0) return x_;
             if (i == 1) return y_;
@@ -65,9 +68,10 @@ class Vec3 {
 using Point3 = Vec3;
 using Color = Vec3;
 
-float dot(const Vec3& u, const Vec3& v) { return u.dot(v); }
-Vec3 cross(const Vec3& u, const Vec3& v) { return u.cross(v); }
+inline float dot(const Vec3& u, const Vec3& v) { return u.dot(v); }
+inline Vec3 cross(const Vec3& u, const Vec3& v) { return u.cross(v); }
 
-DWORD colorToDWORD(const Color& c) {
-    return BGR(RGB(c.x(), c.y(), 0));
+inline DWORD colorToDWORD(const Color& c) {
+    return BGR(RGB(c.x(), c.y(), c.z()));
 }
+#endif

@@ -128,6 +128,30 @@ RTWeekend/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RTWeekend.dir\build.make CMakeFiles/RTWeekend.dir/build
 .PHONY : RTWeekend/fast
 
+camera.obj: camera.cpp.obj
+.PHONY : camera.obj
+
+# target to build an object file
+camera.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RTWeekend.dir\build.make CMakeFiles/RTWeekend.dir/camera.cpp.obj
+.PHONY : camera.cpp.obj
+
+camera.i: camera.cpp.i
+.PHONY : camera.i
+
+# target to preprocess a source file
+camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RTWeekend.dir\build.make CMakeFiles/RTWeekend.dir/camera.cpp.i
+.PHONY : camera.cpp.i
+
+camera.s: camera.cpp.s
+.PHONY : camera.s
+
+# target to generate assembly for a file
+camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RTWeekend.dir\build.make CMakeFiles/RTWeekend.dir/camera.cpp.s
+.PHONY : camera.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -161,6 +185,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... RTWeekend
+	@echo ... camera.obj
+	@echo ... camera.i
+	@echo ... camera.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

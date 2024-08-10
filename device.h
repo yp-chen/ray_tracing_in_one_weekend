@@ -1,3 +1,5 @@
+#ifndef DEVICE_H
+#define DEVICE_H
 #include <graphics.h>
 #include <iostream>
 
@@ -49,3 +51,4 @@ private:
 	int	   height_; //高度
 	int	   maximum_pixel_; //最大像素
 };
+#endif // DEVICE_H
