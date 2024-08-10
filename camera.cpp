@@ -38,7 +38,7 @@ Color Camera::ray_color(const Ray& r, Sphere world) const {
     Result = Result * 255.0;
     hit_record rec;
     if (world.hit(r, rec)) {
-        return Color(255, 0, 0);
+        return Color(rec.normal[0] + 1, rec.normal[1] + 1, rec.normal[2] + 1) * 0.5 * 255.0;
     }
     return Result;
 }
