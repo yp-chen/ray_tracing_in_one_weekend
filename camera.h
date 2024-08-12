@@ -4,12 +4,13 @@
 #include "ray.h"
 #include "device.h"
 #include "sphere.h"
+#include <vector>
 class Camera {
     public:
         Camera(Point3 center_point, Vec3 up, Vec3 look_at, double vfov, double aspect_ratio, double screen_height, double near);
         Ray get_ray(double u, double v) const; // u,v are in [0,1]
-        Color ray_color(const Ray& r, Sphere world) const; //返回颜色
-        void rander(Sphere world); //渲染屏幕
+        Color ray_color(const Ray& r, std::vector<Object*> world) const; //返回颜色
+        void rander(std::vector<Object*> world); //渲染屏幕
         void printval() const;
     private:
         Point3 center_point_;

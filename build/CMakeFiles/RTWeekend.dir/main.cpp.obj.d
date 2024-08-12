@@ -367,4 +367,13 @@ CMakeFiles/RTWeekend.dir/main.cpp.obj: \
  C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\camera.h \
  C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\device.h \
  C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\sphere.h \
- C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\object.h
+ C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\object.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/vector \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_construct.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_uninitialized.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/utility \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_relops.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_bvector.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/vector.tcc \
+ C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\scene.h

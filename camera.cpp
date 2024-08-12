@@ -1,8 +1,5 @@
 #include "camera.h"
-#ifndef VEC3_H
-#define VEC3_H
 #include "vec3.h"
-#endif
 #include "ray.h"
 #include "global.h"
 Camera::Camera(Point3 center_point, Vec3 up, Vec3 look_at, double vfov, double aspect_ratio, double screen_height, double near_plane): Graphics(aspect_ratio * screen_height, screen_height) {
@@ -31,19 +28,27 @@ Ray Camera::get_ray(double u, double v) const {
     return Ray(origin, direction);
 }
 
-Color Camera::ray_color(const Ray& r, Sphere world) const {
+Color Camera::ray_color(const Ray& r, std::vector<Object*> world) const {
     Vec3 Direction = r.direction().normalize();
     const auto a = 0.5 * (Direction[1] + 1.0);
     auto Result = (1.0 - a) * Color(1.0, 1.0, 1.0) + a * Color (0.5, 0.7, 1.0);
     Result = Result * 255.0;
     hit_record rec;
-    if (world.hit(r, rec)) {
+    for (auto& obj : world) {
+        hit_record temp_rec;
+        if (obj->hit(r, temp_rec)) {
+            if (temp_rec.t < rec.t) {
+                rec = temp_rec;
+            }
+        }
+    }
+    if (rec.hit) {
         return Color(rec.normal[0] + 1, rec.normal[1] + 1, rec.normal[2] + 1) * 0.5 * 255.0;
     }
     return Result;
 }
 
-void Camera::rander(Sphere world) {
+void Camera::rander(std::vector<Object*> world) {
     Point3 left_top = center_point_ - Vec3(half_near_width_, -half_near_height_, 0) - Vec3(0, 0, near_);
     //横纵单位步长
     double horizontal_step = near_width_ / viewport_width_;

@@ -362,4 +362,5 @@ CMakeFiles/RTWeekend.dir/sphere.cpp.obj: \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/x86_64-w64-mingw32/include/mcx.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/x86_64-w64-mingw32/include/imm.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/x86_64-w64-mingw32/include/tchar.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/x86_64-w64-mingw32/include/sec_api/tchar_s.h
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/x86_64-w64-mingw32/include/sec_api/tchar_s.h \
+ C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\global.h
