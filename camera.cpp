@@ -19,14 +19,14 @@ Camera::Camera(Point3 center_point, Vec3 up, Vec3 look_at, double vfov, double a
     half_near_height_ = near_height_ / 2.0;
 }
 
-Ray Camera::get_ray(double u, double v) const {
-    Vec3 horizontal = Vec3(half_near_width_, 0, 0);
-    Vec3 vertical = Vec3(0, half_near_height_, 0);
-    Vec3 lower_left_corner = center_point_ - horizontal - vertical - Vec3(0, 0, near_);
-    Vec3 origin = center_point_;
-    Vec3 direction = lower_left_corner + u * horizontal + v * vertical - origin;
-    return Ray(origin, direction);
-}
+// Ray Camera::get_ray(double u, double v) const {
+//     Vec3 horizontal = Vec3(half_near_width_, 0, 0);
+//     Vec3 vertical = Vec3(0, half_near_height_, 0);
+//     Vec3 lower_left_corner = center_point_ - horizontal - vertical - Vec3(0, 0, near_);
+//     Vec3 origin = center_point_;
+//     Vec3 direction = lower_left_corner + u * horizontal + v * vertical - origin;
+//     return Ray(origin, direction);
+// }
 
 Color Camera::ray_color(const Ray& r, std::vector<Object*> world) const {
     Vec3 Direction = r.direction().normalize();
@@ -54,14 +54,18 @@ void Camera::rander(std::vector<Object*> world) {
     double horizontal_step = near_width_ / viewport_width_;
     double vertical_step = near_height_ / viewport_height_;
     //左上角中心点位置
-    Point3 left_top_center = left_top + Vec3(horizontal_step / 2.0, -vertical_step / 2.0, 0);
+    // Point3 left_top_center = left_top + Vec3(horizontal_step / 2.0, -vertical_step / 2.0, 0);
     for (int i = 0; i < viewport_height_; ++i) {
         std::clog << "\rThere are still left:" << ( viewport_height_ - i) << "scanlines to be rendered" << std::flush;
         for (int j = 0; j < viewport_width_; ++j) {
             //当前中心点坐标
-            Point3 center = left_top_center + Vec3(j * horizontal_step, -i * vertical_step, 0);
-            Ray r(center_point_, center - center_point_);
-            Color writecolor = ray_color(r, world);
+            Color writecolor(0, 0, 0);
+            for (int k = 0; k < sample_num_; ++k) {
+                Point3 sample_point = random_point();
+                Point3 center = left_top + Vec3(horizontal_step * j + sample_point[0] * horizontal_step, -vertical_step * i + sample_point[1] * vertical_step, 0);
+                Ray r(center_point_, center - center_point_);
+                writecolor += ray_color(r, world) / sample_num_;
+            }
             Graphics.At(j, i) = colorToDWORD(writecolor);
         }
     }
