@@ -9,9 +9,9 @@ bool Sphere::hit(const Ray& r, hit_record& rec) const {
         return false;
     }
     double t = (-halfb - std::sqrt(discriminant)) / a;
-    if (t < 0) {
+    if (t <= 0) {
         t = (-halfb + std::sqrt(discriminant)) / a;
-        if (t < 0) {
+        if (t <= 0) {
             return false;
         }
     }

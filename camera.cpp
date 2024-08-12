@@ -28,11 +28,10 @@ Camera::Camera(Point3 center_point, Vec3 up, Vec3 look_at, double vfov, double a
 //     return Ray(origin, direction);
 // }
 
-Color Camera::ray_color(const Ray& r, std::vector<Object*> world) const {
-    Vec3 Direction = r.direction().normalize();
-    const auto a = 0.5 * (Direction[1] + 1.0);
-    auto Result = (1.0 - a) * Color(1.0, 1.0, 1.0) + a * Color (0.5, 0.7, 1.0);
-    Result = Result * 255.0;
+Color Camera::ray_color(const Ray& r, std::vector<Object*> world, int maxdepth) const {
+    if (maxdepth <= 0) {
+        return Color(0, 0, 0);
+    }
     hit_record rec;
     for (auto& obj : world) {
         hit_record temp_rec;
@@ -43,8 +42,14 @@ Color Camera::ray_color(const Ray& r, std::vector<Object*> world) const {
         }
     }
     if (rec.hit) {
-        return Color(rec.normal[0] + 1, rec.normal[1] + 1, rec.normal[2] + 1) * 0.5 * 255.0;
+        Vec3 normal = rec.normal.normalize();
+        Vec3 direction = random_in_hemisphere(normal);
+        return  ray_color(Ray(rec.p, direction), world, maxdepth - 1) * 0.5;
     }
+    Vec3 Direction = r.direction().normalize();
+    const auto a = 0.5 * (Direction[1] + 1.0);
+    auto Result = (1.0 - a) * Color(1.0, 1.0, 1.0) + a * Color (0.5, 0.7, 1.0);
+    Result = Result * 255.0;
     return Result;
 }
 
@@ -64,7 +69,7 @@ void Camera::rander(std::vector<Object*> world) {
                 Point3 sample_point = random_point();
                 Point3 center = left_top + Vec3(horizontal_step * j + sample_point[0] * horizontal_step, -vertical_step * i + sample_point[1] * vertical_step, 0);
                 Ray r(center_point_, center - center_point_);
-                writecolor += ray_color(r, world) / sample_num_;
+                writecolor += ray_color(r, world, maxdepth_) / sample_num_;
             }
             Graphics.At(j, i) = colorToDWORD(writecolor);
         }
