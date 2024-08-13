@@ -378,4 +378,5 @@ CMakeFiles/RTWeekend.dir/sphere.cpp.obj: \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/opt_random.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/random.tcc \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/numeric \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_numeric.h
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_numeric.h \
+ C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\interval.h

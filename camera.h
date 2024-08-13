@@ -27,7 +27,7 @@ class Camera {
         double half_near_width_;//近平面的一半宽度和高度
         double half_near_height_;
         Device Graphics;
-        int sample_num_ = 100; //采样次数
-        int maxdepth_ = 50; //最大递归深度
+        int sample_num_ = 20; //采样次数
+        int maxdepth_ = 5; //最大递归深度
 };
 #endif

@@ -17,6 +17,4 @@ class Interval {
         double m_start_;
         double m_end_;
 };
-const Interval Interval::Empty = Interval(MY_INFINITY, -MY_INFINITY);
-const Interval Interval::Universe = Interval(-MY_INFINITY, MY_INFINITY);
 #endif

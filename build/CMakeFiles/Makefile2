@@ -80,12 +80,12 @@ clean: CMakeFiles/RTWeekend.dir/clean
 CMakeFiles/RTWeekend.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RTWeekend.dir\build.make CMakeFiles/RTWeekend.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RTWeekend.dir\build.make CMakeFiles/RTWeekend.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\build\CMakeFiles --progress-num=1,2,3,4 "Built target RTWeekend"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\build\CMakeFiles --progress-num=1,2,3,4,5 "Built target RTWeekend"
 .PHONY : CMakeFiles/RTWeekend.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RTWeekend.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\build\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\build\CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/RTWeekend.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\build\CMakeFiles 0
 .PHONY : CMakeFiles/RTWeekend.dir/rule

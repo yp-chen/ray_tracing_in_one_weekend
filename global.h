@@ -1,10 +1,11 @@
 #ifndef GLOBAL_H
 #define GLOBAL_H
 #include <random>
+#include "vec3.h"
 //PI
 #define M_PI 3.14159265358979323846
 //无穷大
-#define MY_INFINITY 1e8
+constexpr double MY_INFINITY = std::numeric_limits<double>::infinity();
 //返回一个[0,1)的随机数
 inline double random_double() {
     static std::uniform_real_distribution<double> distribution(0.0, 1.0);

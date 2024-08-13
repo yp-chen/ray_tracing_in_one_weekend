@@ -152,6 +152,30 @@ camera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RTWeekend.dir\build.make CMakeFiles/RTWeekend.dir/camera.cpp.s
 .PHONY : camera.cpp.s
 
+interval.obj: interval.cpp.obj
+.PHONY : interval.obj
+
+# target to build an object file
+interval.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RTWeekend.dir\build.make CMakeFiles/RTWeekend.dir/interval.cpp.obj
+.PHONY : interval.cpp.obj
+
+interval.i: interval.cpp.i
+.PHONY : interval.i
+
+# target to preprocess a source file
+interval.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RTWeekend.dir\build.make CMakeFiles/RTWeekend.dir/interval.cpp.i
+.PHONY : interval.cpp.i
+
+interval.s: interval.cpp.s
+.PHONY : interval.s
+
+# target to generate assembly for a file
+interval.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RTWeekend.dir\build.make CMakeFiles/RTWeekend.dir/interval.cpp.s
+.PHONY : interval.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -212,6 +236,9 @@ help:
 	@echo ... camera.obj
 	@echo ... camera.i
 	@echo ... camera.s
+	@echo ... interval.obj
+	@echo ... interval.i
+	@echo ... interval.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -1,5 +1,5 @@
 #include "sphere.h"
-bool Sphere::hit(const Ray& r, hit_record& rec) const {
+bool Sphere::hit(const Ray& r,Interval inter,hit_record& rec) const {
     Vec3 oc = r.origin() - center_;
     double a = r.direction().dot(r.direction());
     double halfb = oc.dot(r.direction());
@@ -9,9 +9,9 @@ bool Sphere::hit(const Ray& r, hit_record& rec) const {
         return false;
     }
     double t = (-halfb - std::sqrt(discriminant)) / a;
-    if (t <= 0) {
+    if (!inter.surrounds(t)) {
         t = (-halfb + std::sqrt(discriminant)) / a;
-        if (t <= 0) {
+        if (!inter.surrounds(t)) {
             return false;
         }
     }

@@ -2,6 +2,7 @@
 #define OBJECT_H
 #include "ray.h"
 #include "global.h"
+#include "interval.h"
 struct hit_record {
     bool hit = false;
     Point3 p;
@@ -10,6 +11,6 @@ struct hit_record {
 };
 class Object {
     public:
-        virtual bool hit(const Ray& r, hit_record& rec) const = 0;
+        virtual bool hit(const Ray& r,Interval inter,hit_record& rec) const = 0;
 };
 #endif

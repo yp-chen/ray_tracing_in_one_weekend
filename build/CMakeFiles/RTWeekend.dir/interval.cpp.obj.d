@@ -1,7 +1,8 @@
-CMakeFiles/RTWeekend.dir/camera.cpp.obj: \
- C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\camera.cpp \
- C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\camera.h \
- C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\vec3.h \
+CMakeFiles/RTWeekend.dir/interval.cpp.obj: \
+ C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\interval.cpp \
+ C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\interval.h \
+ C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\global.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/random \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cmath \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
@@ -54,12 +55,11 @@ CMakeFiles/RTWeekend.dir/camera.cpp.obj: \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_hermite.tcc \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/poly_laguerre.tcc \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tr1/riemann_zeta.tcc \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iosfwd \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/memoryfwd.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/postypes.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cwchar \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/x86_64-w64-mingw32/include/wchar.h \
@@ -69,29 +69,38 @@ CMakeFiles/RTWeekend.dir/camera.cpp.obj: \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/x86_64-w64-mingw32/include/stdint.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/x86_64-w64-mingw32/include/stddef.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/new_allocator.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/exception \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/exception_ptr.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_init_exception.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stddef.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/x86_64-w64-mingw32/include/stddef.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/typeinfo \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/hash_bytes.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/new \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/nested_exception.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/char_traits.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdint \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/stdint.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/x86_64-w64-mingw32/include/stdint.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/localefwd.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/clocale \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/x86_64-w64-mingw32/include/locale.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/x86_64-w64-mingw32/include/stdio.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iosfwd \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cctype \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/x86_64-w64-mingw32/include/ctype.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream_insert.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_forced.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_function.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/binders.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/range_access.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/initializer_list \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/atomicity.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
@@ -107,28 +116,40 @@ CMakeFiles/RTWeekend.dir/camera.cpp.obj: \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocator.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/new_allocator.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ostream_insert.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/cxxabi_forced.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_function.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/binders.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/range_access.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/initializer_list \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/alloc_traits.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/alloc_traits.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string_view \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/functional_hash.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/string_view.tcc \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/string_conversions.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdlib \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cstdio \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/cerrno \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/basic_string.tcc \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/random.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/vector \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_construct.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_uninitialized.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/utility \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_relops.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_bvector.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/vector.tcc \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uniform_int_dist.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/opt_random.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/pmmintrin.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/emmintrin.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xmmintrin.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mmintrin.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mm_malloc.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/random.tcc \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/numeric \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_numeric.h \
+ C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\vec3.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/iostream \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ostream \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ios \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/ios_base.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/locale_classes.tcc \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/system_error \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
@@ -171,11 +192,6 @@ CMakeFiles/RTWeekend.dir/camera.cpp.obj: \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/x86intrin.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/ia32intrin.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mmintrin.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/xmmintrin.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/mm_malloc.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/emmintrin.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/pmmintrin.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/tmmintrin.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/ammintrin.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/smmintrin.h \
@@ -360,25 +376,4 @@ CMakeFiles/RTWeekend.dir/camera.cpp.obj: \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/x86_64-w64-mingw32/include/mcx.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/x86_64-w64-mingw32/include/imm.h \
  C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/x86_64-w64-mingw32/include/tchar.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/x86_64-w64-mingw32/include/sec_api/tchar_s.h \
- C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\ray.h \
- C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\device.h \
- C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\sphere.h \
- C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\object.h \
- C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\global.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/random \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/random.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/vector \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_construct.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_uninitialized.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/utility \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_relops.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_vector.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_bvector.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/vector.tcc \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uniform_int_dist.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/opt_random.h \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/random.tcc \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/numeric \
- C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_numeric.h \
- C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\interval.h
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/x86_64-w64-mingw32/include/sec_api/tchar_s.h

@@ -2,6 +2,7 @@
 #include "vec3.h"
 #include "ray.h"
 #include "global.h"
+#include "interval.h"
 Camera::Camera(Point3 center_point, Vec3 up, Vec3 look_at, double vfov, double aspect_ratio, double screen_height, double near_plane): Graphics(aspect_ratio * screen_height, screen_height) {
     center_point_ = center_point;
     up_ = up;
@@ -35,7 +36,7 @@ Color Camera::ray_color(const Ray& r, std::vector<Object*> world, int maxdepth) 
     hit_record rec;
     for (auto& obj : world) {
         hit_record temp_rec;
-        if (obj->hit(r, temp_rec)) {
+        if (obj->hit(r, Interval(0.001, MY_INFINITY), temp_rec)) {
             if (temp_rec.t < rec.t) {
                 rec = temp_rec;
             }
