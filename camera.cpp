@@ -44,7 +44,8 @@ Color Camera::ray_color(const Ray& r, std::vector<Object*> world, int maxdepth) 
     }
     if (rec.hit) {
         Vec3 normal = rec.normal.normalize();
-        Vec3 direction = random_in_hemisphere(normal);
+        Vec3 direction = random_in_hemisphere(normal) + normal;
+        direction = direction.normalize();
         return  ray_color(Ray(rec.p, direction), world, maxdepth - 1) * 0.5;
     }
     Vec3 Direction = r.direction().normalize();
