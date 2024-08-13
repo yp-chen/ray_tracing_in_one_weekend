@@ -12,6 +12,7 @@ public:
     Vec3 normal;
     double t = MY_INFINITY;
     std::shared_ptr<Material> mat_ptr;
+    bool front_face; //判断是否是正面
 };
 class Object {
     public:

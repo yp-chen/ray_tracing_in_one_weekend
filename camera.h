@@ -28,6 +28,6 @@ class Camera {
         double half_near_height_;
         Device Graphics;
         int sample_num_ = 20; //采样次数
-        int maxdepth_ = 5; //最大递归深度
+        int maxdepth_ = 10; //最大递归深度
 };
 #endif

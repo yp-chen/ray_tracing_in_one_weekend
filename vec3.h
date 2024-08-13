@@ -52,6 +52,7 @@ class Vec3 {
             return z_;
         }
         float norm() const { return std::sqrt(x_ * x_ + y_ * y_ + z_ * z_); }
+        float norm2() const { return x_ * x_ + y_ * y_ + z_ * z_; }
         Vec3 normalize() const { return *this / norm(); }
         friend std::ostream& operator<<(std::ostream& out, const Vec3& v) {
             return out << v.x_ << ' ' << v.y_ << ' ' << v.z_;

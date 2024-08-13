@@ -20,5 +20,7 @@ bool Sphere::hit(const Ray& r,Interval inter,hit_record& rec) const {
     rec.p = r.at(t);
     rec.normal = (rec.p - center_) / radius_;
     rec.mat_ptr = mat_ptr_;
+    rec.front_face = r.direction().dot(rec.normal) < 0;
+    rec.normal = rec.front_face ? rec.normal : -rec.normal;
     return true;
 }
