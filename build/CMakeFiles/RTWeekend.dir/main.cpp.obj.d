@@ -384,4 +384,23 @@ CMakeFiles/RTWeekend.dir/main.cpp.obj: \
  C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\sphere.h \
  C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\object.h \
  C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\interval.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/memory \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_tempbuf.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_raw_storage_iter.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/concurrence.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uses_allocator.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/unique_ptr.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tuple \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/array \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/invoke.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/shared_ptr.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/shared_ptr_base.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/allocated_ptr.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/refwrap.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/aligned_buffer.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/shared_ptr_atomic.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/atomic_base.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/atomic_lockfree_defines.h \
+ C:/Users/yongpeng.chen/mingw64/mingw64_2/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward/auto_ptr.h \
+ C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\material.h \
  C:\Users\yongpeng.chen\Desktop\ray_tracing_in_one_weekend\ray_tracing_in_one_weekend\scene.h

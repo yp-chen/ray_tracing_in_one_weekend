@@ -3,11 +3,15 @@
 #include "ray.h"
 #include "global.h"
 #include "interval.h"
-struct hit_record {
+#include <memory>
+class Material;
+class hit_record {
+public:
     bool hit = false;
     Point3 p;
     Vec3 normal;
     double t = MY_INFINITY;
+    std::shared_ptr<Material> mat_ptr;
 };
 class Object {
     public:

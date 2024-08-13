@@ -19,5 +19,6 @@ bool Sphere::hit(const Ray& r,Interval inter,hit_record& rec) const {
     rec.t = t;
     rec.p = r.at(t);
     rec.normal = (rec.p - center_) / radius_;
+    rec.mat_ptr = mat_ptr_;
     return true;
 }

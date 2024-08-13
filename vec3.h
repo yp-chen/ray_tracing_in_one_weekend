@@ -60,6 +60,10 @@ class Vec3 {
         Vec3 cross(const Vec3& v) const {
             return Vec3(y_ * v.z_ - z_ * v.y_, z_ * v.x_ - x_ * v.z_, x_ * v.y_ - y_ * v.x_);
         }
+        bool near_zero() const {
+            auto s = 1e-8;
+            return (std::fabs(x_) < s) && (std::fabs(y_) < s) && (std::fabs(z_) < s);
+        }
 
     private:
         float x_, y_, z_; // 3D vector

@@ -21,7 +21,8 @@ add_executable(RTWeekend
         sphere.cpp
         scene.h
         interval.h
-        interval.cpp)
+        interval.cpp
+        material.h)
 
 target_link_libraries(RTWeekend easyx)
 

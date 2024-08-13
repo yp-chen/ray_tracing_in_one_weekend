@@ -3,6 +3,7 @@
 #include "ray.h"
 #include "global.h"
 #include "interval.h"
+#include "material.h"
 Camera::Camera(Point3 center_point, Vec3 up, Vec3 look_at, double vfov, double aspect_ratio, double screen_height, double near_plane): Graphics(aspect_ratio * screen_height, screen_height) {
     center_point_ = center_point;
     up_ = up;
@@ -43,10 +44,11 @@ Color Camera::ray_color(const Ray& r, std::vector<Object*> world, int maxdepth) 
         }
     }
     if (rec.hit) {
-        Vec3 normal = rec.normal.normalize();
-        Vec3 direction = random_in_hemisphere(normal) + normal;
-        direction = direction.normalize();
-        return  ray_color(Ray(rec.p, direction), world, maxdepth - 1) * 0.5;
+        Ray scattered;
+        Color attenuation;
+        if (rec.mat_ptr->scatter(r, rec, attenuation, scattered))
+            return attenuation * ray_color(scattered, world, maxdepth-1);
+        return Color(0,0,0);
     }
     Vec3 Direction = r.direction().normalize();
     const auto a = 0.5 * (Direction[1] + 1.0);
