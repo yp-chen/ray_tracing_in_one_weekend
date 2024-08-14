@@ -8,7 +8,7 @@
 #include "scene.h"
 #include "material.h"
 int main() {
-    constexpr int ScreenWidth = 360;
+    constexpr int ScreenWidth = 540;
     constexpr double AspectRatio = 16.0 / 9.0;
     Material* ground_material = new Material(MetalType::kDiffuse ,Vec3(0.5, 0.5, 0.5));
     Sphere ground(Point3(0, -1000, 0), 1000, ground_material);

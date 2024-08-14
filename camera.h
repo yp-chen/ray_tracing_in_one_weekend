@@ -21,7 +21,7 @@ class Camera {
         double viewport_height_;//视口高度
         double viewport_width_;//视口宽度
         Device Graphics;
-        int sample_num_ = 20; //采样次数
+        int sample_num_ = 50; //采样次数
         int maxdepth_ = 10; //最大递归深度
         Vec3 w, u, v;
         Vec3 pixel_delta_u, pixel_delta_v;

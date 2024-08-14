@@ -78,6 +78,6 @@ inline float dot(const Vec3& u, const Vec3& v) { return u.dot(v); }
 inline Vec3 cross(const Vec3& u, const Vec3& v) { return u.cross(v); }
 
 inline DWORD colorToDWORD(const Color& c) {
-    return BGR(RGB(c.x(), c.y(), c.z()));
+    return BGR(RGB(std::sqrt(c.x()) * 16, std::sqrt(c.y()) * 16, std::sqrt(c.z()) * 16));
 }
 #endif
