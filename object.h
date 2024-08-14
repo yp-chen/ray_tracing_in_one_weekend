@@ -17,5 +17,7 @@ public:
 class Object {
     public:
         virtual bool hit(const Ray& r,Interval inter,hit_record& rec) const = 0;
+        virtual ~Object() = default;
+        // virtual void transform(Vec3 w, Vec3 u, Vec3 v, Vec3 center_point) = 0;
 };
 #endif

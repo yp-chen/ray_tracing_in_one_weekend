@@ -8,25 +8,40 @@
 #include "scene.h"
 #include "material.h"
 int main() {
-    constexpr int ScreenWidth = 640;
+    constexpr int ScreenWidth = 360;
     constexpr double AspectRatio = 16.0 / 9.0;
-    Material* ground_material = new Material(MetalType::kDiffuse ,Vec3(0.8, 0.8, 0.0));
-    Material* sphere_material = new Material(MetalType::kDiffuse ,Vec3(0.1, 0.2, 0.5));
-    Material* left_material = new Material(MetalType::kDielectric ,Vec3(0.8, 0.8, 0.8), 0.3, 1.50);
-    Material* left_material2 = new Material(MetalType::kDielectric ,Vec3(0.8, 0.8, 0.8), 0.3, 1.00 / 1.50);
-    Material* right_material = new Material(MetalType::kMetal ,Vec3(0.8, 0.6, 0.2), 1.0);
-    Sphere sphere(Point3(0, 0, -1.2), 0.5, sphere_material);
-    Sphere left(Point3(-1, 0, -1), 0.5, left_material);
-    Sphere left2(Point3(-1, 0, -1), 0.4, left_material2);
-    Sphere right(Point3(1, 0, -1), 0.5, right_material);
-    Sphere ground(Point3(0, -100.5, -1.0), 100, ground_material);
-    Camera camera(Point3(0, 0, 0), Vec3(0, 1, 0), Vec3(0, 0, -1), 90, AspectRatio, ScreenWidth, 1);
+    Material* ground_material = new Material(MetalType::kDiffuse ,Vec3(0.5, 0.5, 0.5));
+    Sphere ground(Point3(0, -1000, 0), 1000, ground_material);
+
+    Camera camera(Point3(13, 2, 3), Vec3(0, 1, 0), Vec3(0, 0, 0), 20, AspectRatio, ScreenWidth);
     Scene scene(camera);
-    scene.add_sphere_list(&sphere);
     scene.add_sphere_list(&ground);
-    scene.add_sphere_list(&left);
-    scene.add_sphere_list(&left2);
-    scene.add_sphere_list(&right);
+    for (int a = -11; a < 11; a++) {
+        for (int b = -11; b < 11; b++) {
+            double choose_mat = random_double();
+            Point3 center(a + 0.9 * random_double(), 0.2, b + 0.9 * random_double());
+            if ((center - Point3(4, 0.2, 0)).norm() > 0.9) {
+                if (choose_mat < 0.8) {
+                    Material* sphere_material = new Material(MetalType::kDiffuse ,Vec3(random_double() * random_double(), random_double() * random_double(), random_double() * random_double()));
+                    scene.add_sphere_list(new Sphere(center, 0.2, sphere_material));
+                }
+                else if (choose_mat < 0.95) {
+                    Material* sphere_material = new Material(MetalType::kMetal ,Vec3(0.5 * (1 + random_double()), 0.5 * (1 + random_double()), 0.5 * (1 + random_double())), 0.5 * random_double());
+                    scene.add_sphere_list(new Sphere(center, 0.2, sphere_material));
+                }
+                else {
+                    Material* sphere_material = new Material(MetalType::kDielectric ,Vec3(1, 1, 1), 0.0, 1.5);
+                    scene.add_sphere_list(new Sphere(center, 0.2, sphere_material));
+                }
+            }
+        }
+    }
+    Material* material1 = new Material(MetalType::kDielectric ,Vec3(1, 1, 1), 0.0, 1.5);
+    scene.add_sphere_list(new Sphere(Point3(0, 1, 0), 1.0, material1));
+    Material* material2 = new Material(MetalType::kDiffuse ,Vec3(0.4, 0.2, 0.1));
+    scene.add_sphere_list(new Sphere(Point3(-4, 1, 0), 1.0, material2));
+    Material* material3 = new Material(MetalType::kMetal ,Vec3(0.7, 0.6, 0.5), 0.0);
+    scene.add_sphere_list(new Sphere(Point3(4, 1, 0), 1.0, material3));
     scene.render();
     _getch();
     return 0;

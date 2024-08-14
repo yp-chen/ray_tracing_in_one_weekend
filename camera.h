@@ -7,7 +7,7 @@
 #include <vector>
 class Camera {
     public:
-        Camera(Point3 center_point, Vec3 up, Vec3 look_at, double vfov, double aspect_ratio, double screen_height, double near);
+        Camera(Point3 center_point, Vec3 up, Vec3 look_at, double vfov, double aspect_ratio, double screen_height);
         // Ray get_ray(double u, double v) const; // u,v are in [0,1]
         Color ray_color(const Ray& r, std::vector<Object*> world, int maxdepth) const; //返回颜色
         void rander(std::vector<Object*> world); //渲染屏幕
@@ -20,14 +20,11 @@ class Camera {
         double fov_;//视场角
         double viewport_height_;//视口高度
         double viewport_width_;//视口宽度
-        double near_;//近平面
-        double far_ = 0;//远平面
-        double near_width_;//近平面的宽度和高度
-        double near_height_;
-        double half_near_width_;//近平面的一半宽度和高度
-        double half_near_height_;
         Device Graphics;
         int sample_num_ = 20; //采样次数
         int maxdepth_ = 10; //最大递归深度
+        Vec3 w, u, v;
+        Vec3 pixel_delta_u, pixel_delta_v;
+        Point3 lower_left_corner_;
 };
 #endif

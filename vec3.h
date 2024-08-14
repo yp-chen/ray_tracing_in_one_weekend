@@ -20,6 +20,7 @@ class Vec3 {
         Vec3 operator+(float t) const { return Vec3(x_ + t, y_ + t, z_ + t); }
         Vec3 operator-(float t) const { return Vec3(x_ - t, y_ - t, z_ - t); }
         Vec3 operator*(float t) const { return Vec3(x_ * t, y_ * t, z_ * t); }
+        // Vec3& operator=(const Vec3& v) const { return *this = v; }
         friend Vec3 operator*(float t, const Vec3& v) { return v * t; }
         Vec3 operator/(float t) const {
             if (t == 0) {
